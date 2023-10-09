@@ -5,7 +5,7 @@
 
 :root {
   // Edited variables
-  --color-white: #fff;
+  --color-white: #f6f6f6;
   --width-body: 900px;
   --item-title-link-line-height: 1.23;
   --entry-content-line-height: 1.5;
@@ -14,17 +14,17 @@
   --font-size-meta: var(--font-size-smaller);
   --font-size-larger: 20px;
   --font-size-body: 18px;
-  --item-meta-color: #fff;
-  --item-meta-li-color-hover: #fff;
-  --entry-date-color: #fff;
-  --input-placeholder-color: #fff;
+  --item-meta-color: #f6f6f6;
+  --item-meta-li-color-hover: #f6f6f6;
+  --entry-date-color: #f6f6f6;
+  --input-placeholder-color: #f6f6f6;
   --entry-header-border-color: transparent;
   --pagination-border-color: transparent;
 
   // Miniflux variables
   --font-family: "Inter", system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --body-color: #efefef;
-  --body-background: #0d1118;
+  --body-background: #21252b;
   --hr-border-color: #555;
   --title-color: var(--color-white);
   --link-color: var(--color-white);
@@ -46,13 +46,13 @@
   --table-tr-hover-color: var(--color-white);
   --button-primary-border-color: transparent;
   --button-primary-background: #000;
-  --button-primary-color: #fff;
+  --button-primary-color: #f6f6f6;
   --button-primary-focus-border-color: #888;
   --button-primary-focus-background: #555;
   --input-border: 0;
   --input-background: #000;
-  --input-color: #fff;
-  --input-focus-color: #fff;
+  --input-color: #f6f6f6;
+  --input-focus-color: #f6f6f6;
   --input-focus-border-color: rgba(82, 168, 236, .8);
   --input-focus-box-shadow: 0;
   --alert-color: #efefef;
@@ -174,13 +174,13 @@ body .header {
 
 // Listing header
 .page-header {
-  > h1 {
+  >h1 {
     padding-bottom: 10px;
   }
 
   // "No unread articles
-  + p.alert,
-  + p.alert.alert-info {
+  +p.alert,
+  +p.alert.alert-info {
     background-image: url('https://www.rollemaa.fi/done.svg');
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -196,7 +196,7 @@ body .header {
     }
   }
 
-  > ul {
+  >ul {
     list-style: none;
     margin-left: 0;
     margin-top: 10px;
@@ -333,6 +333,7 @@ body .item {
 
 // Meta data
 .item-meta {
+
   li,
   a {
     color: var(--item-meta-li-color);
@@ -472,6 +473,7 @@ a:focus {
 // @source https://twitter.com/argyleink/status/1387072095159406596
 // @link https://codepen.io/argyleink/pen/JjEzeLp
 @media (prefers-reduced-motion: no-preference) {
+
   .item.current-item,
   .item,
   :focus,
@@ -631,7 +633,7 @@ article.feed-parsing-error {
 .header a .error-feeds-counter {
   align-items: center;
   border-radius: 50%;
-  color: #fff !important;
+  color: #f6f6f6 !important;
   display: inline-flex;
   font-size: 11px;
   font-weight: 700;
